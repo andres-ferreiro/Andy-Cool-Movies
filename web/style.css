@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,200;1,500&display=swap');
+
+html {
+  overflow: hidden;
+  background-color: #171717;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #DA0037;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #DA0037;
+}
+
+button.back {
+  font-size: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.0);
+  border: none;
+  border-style: none;
+  margin-top: 5%;
+  padding: 0px 20px 15px 20px;
+}
+
+input.search {
+  z-index: 1;
+  position: absolute;
+  width: 500px;
+  background-color: transparent;
+  border:none;
+  border-bottom: 2px solid #DA0037;
+  padding: 5px 0px;
+  outline: none;
+  top: 5%;
+  left: 11%;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: grey;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  opacity: 1; /* Firefox */
+}
+
+p {
+  color: #444444;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  position: absolute;
+  display: block;
+  top: 14%;
+  left: 11%;
+}
+
+div.scroll {
+  overflow-y: scroll;
+  top: 25%;
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  padding-top: -30px;
+}
+
+table {
+  z-index: 1;
+  overflow: auto;
+  position: absolute;
+  top: 0%;
+  left: 6%;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  margin-top: 0px;
+  border-collapse: separate;
+  border-spacing: 50px 25px;
+  padding-bottom: 50px;
+}
+
+span.title {
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  color: White;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+span.year {
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  color: Grey;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+img {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 66px -16px rgba(0,0,0,0.54);
+  -webkit-box-shadow: 0px 0px 66px -16px rgba(0,0,0,0.54);
+  -moz-box-shadow: 0px 0px 66px -16px rgba(0,0,0,0.54);
+  }
+
+  a.pbuttons {
+    height: 50px;
+    width: 50px;
+    padding: 10px 20px 10px 17px;
+    background-color: #DA0037;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-left: 3px;
+  }
+
+  div.pbuttonsm {
+    position: absolute;
+    display: block;
+    top: 10%;
+    right: 12%;
+  }
+
+  input.page {
+    height: 1px;
+    width: 1px;
+    left: -999px;
+    position: absolute;
+  }
+
+  span.pnum {
+    color: white;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    opacity: 1; /* Firefox */
+    padding: 0px 5px 0px 5px;
+  }
+
+  /* Use a media query to add a break point at 800px: */
+  @media screen and (max-width: 800px) {
+    img {
+      width: 100px; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    table {
+      border-spacing: 20px 10px;
+      padding-bottom: 50px;
+      left: 0%;
+    }
+
+    span.title {
+      width: 100px;
+      font-weight: 200;
+      font-size: 10px;
+    }
+
+    span.year {
+      width: 100px;
+      font-weight: 200;
+      font-size: 5px;
+    }
+
+    input.search {
+      width: 300px;
+      font-size: 25px;
+    }
+
+    ::placeholder {
+      font-size: 15px;
+    }
+
+    div.pbuttonsm {
+      position: absolute;
+      display: block;
+      top: 13%;
+      left: 0%;
+      left: 11%;
+      padding-bottom: 10px;
+    }
+    a.pbuttons {
+      height: 30px;
+      width: 30px;
+      padding: 10px 20px 10px 17px;
+      background-color: #DA0037;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      border-radius: 30px;
+      margin-left: 3px;
+    }
+    p {
+      margin-top: 35px;
+      font-size: 15px;
+    }
+  }
