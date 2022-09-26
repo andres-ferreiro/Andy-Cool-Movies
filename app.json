@@ -1,0 +1,6 @@
+{
+  "name": "Andy Cool Movies",
+  "description": "A web based platform to watch torrent movies for free",
+  "repository": "https://github.com/heroku/php-getting-started",
+  "addons": []
+}
